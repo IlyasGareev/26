@@ -79,11 +79,11 @@ public:
 
         m_pSphereMesh = new Mesh();
 
-        if (!m_pSphereMesh->LoadMesh("/Content/box.obj")) {
+        if (!m_pSphereMesh->LoadMesh("C:/Users/User/Downloads/Content/box.obj")) {
             return false;
         }
 
-        m_pTexture = new Texture(GL_TEXTURE_2D, "/Content/bricks.jpg");
+        m_pTexture = new Texture(GL_TEXTURE_2D, "C:/Users/User/Downloads/Content/bricks.jpg");
 
         if (!m_pTexture->Load()) {
             return false;
@@ -91,13 +91,13 @@ public:
 
         m_pTexture->Bind(COLOR_TEXTURE_UNIT);
 
-        m_pNormalMap = new Texture(GL_TEXTURE_2D, "/Content/normal_map.jpg");
+        m_pNormalMap = new Texture(GL_TEXTURE_2D, "C:/Users/User/Downloads/Content/normal_map.jpg");
 
         if (!m_pNormalMap->Load()) {
             return false;
         }
 
-        m_pTrivialNormalMap = new Texture(GL_TEXTURE_2D, "/Content/normal_up.jpg");
+        m_pTrivialNormalMap = new Texture(GL_TEXTURE_2D, "C:/Users/User/Downloads/Content/normal_up.jpg");
 
         if (!m_pTrivialNormalMap->Load()) {
             return false;
